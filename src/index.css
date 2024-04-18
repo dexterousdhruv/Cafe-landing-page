@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white; 
+}
+
+
+
+
+body {
+  background-color: #0000001a;
+}
+
+.max-container {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
+.hero-bg {
+  background: url(./assets/hero.png);
+  background-size: cover;
+}
+
+.feature- {
+  background: url(./assets/hero.png);
+  background-size: cover;
+}
+
+
+
+@layer utilities {
+  .nav-item {
+    @apply border-2 border-transparent text-center py-[0.8rem] hover:border-white cursor-pointer duration-200 rounded-lg 
+  }
+
+}
